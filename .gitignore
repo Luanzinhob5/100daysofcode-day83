@@ -1,0 +1,43 @@
+# Arquivos de Ambiente - NUNCA ENVIE SUAS SENHAS PARA O GITHUB!
+.env
+.env.*
+!.env.example
+
+# Dependências do Node.js
+# Esta pasta pode ter milhares de arquivos e é recriada com 'npm install'
+node_modules/
+
+# Logs e arquivos temporários do NPM e outros
+npm-debug.log
+npm-debug.*.log
+*-debug-0.log
+pnpm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Ambiente Virtual do Python (venv)
+# Recriado com 'python -m venv venv' e 'pip install -r requirements.txt'
+venv/
+*.venv
+env/
+.env/
+
+# Cache do Python e arquivos compilados
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Arquivos de configuração de Editores e SO
+# Específicos da máquina de cada desenvolvedor
+.vscode/
+.idea/
+.DS_Store
+*.suo
+*.user
+*.user.*
+*.sln.docstates
+
+# Arquivos de build e distribuição
+/dist/
+/build/
