@@ -1,9 +1,25 @@
 {% include "header.html" %}
+    <section class="flex flex-row gap-25 items-center px-20 mx-20">
+        <div class="overflow-hidden shadow-xl md:w-80 md:h-120"> 
+            <img src="{{ url_for('static', filename='img/foto-luan-portfolio.jpg') }}" alt="Foto de Luan" class="object-cover w-full h-full"> 
+        </div>
+        <section class="flex flex-col">
+            <div class="mt-8 text-[#DDDAD0]">
+                <h1 class="font-[Lora] text-5xl text-brand-text">Eu sou Luan.</h1>
+                <p class="mt-2 text-3xl w-95 tracking-wide">Desenvolvedor Full-Stack & Automação com Python</p>
+            </div>
+            <div class="mt-10 flex items-center gap-x-11 text-[#DDDAD0] text-2xl">
+                <a href="{{ url_for('automacoes') }}"
+                    class="border border-[#DDDAD0]/80 px-8 py-3 rounded-md font-semibold hover:bg-[#DDDAD0] hover:text-gray-800 transition-all duration-300"
+                >Automações
+                </a>
 
-        <section class="plano-de-fundo-inicio">
-            <div class="plano-de-fundo-inicio-conteudo">
-                <h1>Seja bem vindo</h1>
+                <a href="{{ url_for('web') }}"
+                    class="border border-[#DDDAD0]/80 px-8 py-3 rounded-md font-semibold hover:bg-[#DDDAD0] hover:text-gray-800 transition-all duration-300"
+                >Web
+                </a>
             </div>
         </section>
+    </section>
     </body>
 </html>

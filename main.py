@@ -1,5 +1,4 @@
 from flask import Flask, render_template
-from flask_bootstrap import Bootstrap5
 
 app = Flask(__name__)
 
@@ -8,18 +7,13 @@ app = Flask(__name__)
 def home():
     return render_template("home.html")
 
-
-@app.route("/projetos")
-def projetos():
-    return render_template("projetos.html")
-
 @app.route("/contato")
-def contato():
-    return render_template("contato.html")
+def web():
+    return render_template("web.html")
 
 @app.route("/sobre")
-def sobre():
-    return render_template("sobre.html")
+def automacoes():
+    return render_template("automacoes.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
