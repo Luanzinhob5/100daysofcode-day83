@@ -1,1 +1,25 @@
 @import "tailwindcss";
+
+@utility btn {
+  /* Usamos a função theme() para pegar valores do nosso tailwind.config.js e manter a consistência. */
+  padding: theme('spacing.3') theme('spacing.8'); /* Equivalente a py-3 px-8 */
+  border-radius: theme('borderRadius.md');      /* Equivalente a rounded-md */
+  font-weight: theme('fontWeight.semibold');    /* Equivalente a font-semibold */
+  letter-spacing: theme('letterSpacing.wide');  /* Equivalente a tracking-wide */
+  display: inline-block; /* Garante que o padding e outras propriedades funcionem bem em links <a> */
+  transition-property: all;
+  transition-timing-function: theme('transitionTimingFunction.in-out');
+  transition-duration: 300ms;
+};
+
+@utility btn-ghost-light {
+  /* Usando a cor que você definiu, com 80% de opacidade */
+  border: 1px solid rgba(221, 218, 208, 0.8);
+  color: rgba(221, 218, 208, 0.8);
+  background-color: transparent;
+}
+
+@utility btn-ghost-light:hover {
+  background-color: #DDDAD0;
+  color: theme('colors.gray.800'); /* text-gray-800 */
+}
